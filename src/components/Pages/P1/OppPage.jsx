@@ -38,7 +38,7 @@ export default function OppPage() {
   );
 
   return (
-    <div className="OppPage" style={{display: "flex", flexDirection: "column", gap: "20px", direction: "rtl", padding: "100px 60px" }}>
+    <div className="OppPage" style={{display: "flex", flexDirection: "column", gap: "20px", direction: "rtl", padding: "100px 0px" }}>
       
       {/* القسم العلوي مع العنوان وصندوق البحث */}
       <h1 className="x">فرص التدريب المتاحة</h1>
