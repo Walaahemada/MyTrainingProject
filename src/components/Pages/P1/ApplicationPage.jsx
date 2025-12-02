@@ -83,7 +83,8 @@ if (!opportunityId) {
     <div style={{ padding: "100px 60px" }} className="min-h-screen bg-gray-50 flex justify-center py-12 px-4">
       <div className="w-full max-w-2xl bg-white p-8 rounded-2xl shadow-md border">
 
-        <h1 className="text-3xl font-bold text-blue-600 mb-3">التقديم على فرصة التدريب</h1>
+        <h1 className="x">التقديم على فرصة التدريب</h1>
+        
         <p className="text-gray-500 mb-6">
           يرجى تعبئة البيانات التالية لإرسال طلبك للتدريب.
         </p>
