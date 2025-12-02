@@ -63,7 +63,7 @@ function Login() {
   };
 
   return (
-    <div style={{ direction: "rtl" }} className="login-wrapper">
+    <div style={{ direction: "rtl",margin:"0px 5px" }} className="login-wrapper">
 
       <div className="login-container">
       <img style={{paddingBottom:"60px",top:"156px" }} className="logo2" src={logo} alt="شعار الموقع" />
