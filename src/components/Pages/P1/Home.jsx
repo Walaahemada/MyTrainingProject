@@ -13,8 +13,8 @@ function Home() {
         height: "100vh"
       }}
     >
-      <div style={{ padding:"50px 0px" }}>
-        <div className="hero">
+      <div style={{ padding:"50px 0px"}}>
+        <div className="hero" style={{ padding:"20px"}}>
           <div className="hero-content">
             <h1 className="h10">
               ابني <span className="highlight">مستقبلك المهني</span> <br />

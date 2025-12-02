@@ -50,12 +50,29 @@ function Header() {
           <li><a onClick={() => navigate("/CompanyPage")}>الشركات</a></li>
           <li><a onClick={() => navigate("/About")}>من نحن</a></li>
           <li><a onClick={() => navigate("/ContactPage")}>اتصل بنا</a></li>
+        {/* أزرار الموبايل داخل القائمة الجانبية */}
+  {!user && (
+    <div className="mobile-auth">
+      <button onClick={() => { navigate("/login"); setShowMenu(false); }}>
+        تسجيل الدخول
+      </button>
+
+      <button 
+        className="register-btn"
+        onClick={() => { navigate("/signup"); setShowMenu(false); }}
+      >
+        إنشاء حساب
+      </button>
+    </div>
+  )}
+
         </ul>
+        
 
         {/* ===== مستخدم غير مسجل ===== */}
         {!user && (
           <div className="auth-buttons">
-            <button onClick={() => navigate("/login")}>تسجيل الدخول</button>
+            <button onClick={() =>{ navigate("/login");setShowMenu(false); }}>تسجيل الدخول</button>
             <button onClick={() => navigate("/signup")} className="register-btn">إنشاء حساب</button>
           </div>
         )}

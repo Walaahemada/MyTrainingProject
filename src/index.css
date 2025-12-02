@@ -152,6 +152,42 @@ p{
 .logout i {
   color: red;
 }
+/* ===== أزرار الموبايل ===== */
+.mobile-auth {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 25px;
+  margin-top: 20px;
+}
+
+.mobile-auth button {
+  padding: 10px;
+  border: none;
+  background: #1b9bb7;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.mobile-auth .register-btn {
+  color: #1b9bb7;
+  background: none;
+}
+
+/* عرضها فقط على الشاشات الصغيرة */
+@media (max-width: 850px) {
+  .mobile-auth {
+    display: flex;
+  }
+
+  .auth-buttons {
+    display: none; /* يخفي الأزرار العادية */
+  }
+}
+
+
 
 /* ==================== */
 /* ===== الموبايل ===== */
@@ -389,11 +425,19 @@ p{
   }
 
   .hero {
-    padding: 25px ;
+    padding: 20px ;
    
 
    
   }
+  .h10 {
+    font-size: 25px !important;
+    line-height: 1.4;
+  }
+  .description {
+    font-size: 12px;
+  }
+
   
 
   .hero-content h1 {
