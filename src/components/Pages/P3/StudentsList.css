@@ -1,0 +1,12 @@
+.students-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .no-data {
+    text-align: center;
+    color: #777;
+    padding: 25px;
+  }
+  

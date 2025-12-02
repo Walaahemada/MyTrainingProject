@@ -1,0 +1,93 @@
+.notif-wrapper {
+  position: relative;
+}
+
+.bell {
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.notif-count {
+  background: red;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -8px;
+}
+
+.notif-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 10;
+  width: 300px;
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 12px #0002;
+  z-index: 999;
+}
+
+.notif-item {
+  box-shadow: none !important;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.notif-item:last-child {
+  border-bottom: none;
+}
+
+.time {
+  font-size: 11px;
+  color: gray;
+}
+
+.empty {
+  text-align: center;
+  padding: 20px;
+  color: gray;
+}
+
+
+.mark-all-btn {
+  background: transparent;
+  border: none;
+  color: #1b9bb7;
+  cursor: pointer;
+  font-size: 12px;
+}
+.mark-all-btn:hover {
+  background: none !important;
+  color: inherit !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #c0392b;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background: none !important;
+ 
+}
+
+.notif-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+
+
+

@@ -1,0 +1,28 @@
+
+      Header
+
+      Main
+      
+          Home
+          S2
+            Title
+            Card
+          S3
+            Title
+            Card1
+          S4
+            Title
+            Card2
+          S5
+            Title
+    
+       Footer
+       ====================================================
+       
+       
+       صفحة الفرص
+       Title
+       FilterSidebar
+       TrainingCard
+
+

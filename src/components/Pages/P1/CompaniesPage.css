@@ -1,0 +1,33 @@
+.CompaniesPage {
+    width: 100%;
+
+
+  }
+  
+  .CompaniesPage h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .CompaniesPage p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .company-search {
+    width: 500px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    outline: none;
+  }
+  
+  .companies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,88 @@
+/* شبكة الكروت */
+.opp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* الكارد */
+  .opp-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  
+  .opp-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* الصورة */
+  .opp-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  /* المحتوى */
+  .opp-content {
+    padding: 15px;
+    text-align: right;
+  }
+  
+  .opp-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .opp-company {
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  .opp-details {
+    color: #777;
+    margin: 8px 0;
+  }
+  
+  /* التاغات */
+  .opp-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+  }
+  
+  .tag {
+    background: #e6f4ff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+  }
+  
+  /* الفوتر */
+  .opp-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .apply-btn {
+    background: #0d7a9a;
+    padding: 8px 15px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .points {
+    color: #0d7a9a;
+    font-weight: bold;
+  }
+  
