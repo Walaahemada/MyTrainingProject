@@ -3,6 +3,7 @@
   flex-direction: row;
   align-items: center;
   gap: 10px; /* المسافة بين اللوجو والنص */
+  max-width: 100%;
 }
 
 

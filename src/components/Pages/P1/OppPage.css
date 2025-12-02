@@ -85,4 +85,14 @@
     color: #0d7a9a;
     font-weight: bold;
   }
+  .x{
+    margin: 0px;
+  }
+/* ======== الشاشات الصغيرة ========= */
+@media (max-width: 600px) {
+  .OppPage {
+    padding: 90px 20px !important;  /* تصغير الحواف */
+  }
+
   
+}

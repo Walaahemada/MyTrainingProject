@@ -41,7 +41,7 @@ export default function OppPage() {
     <div className="OppPage" style={{display: "flex", flexDirection: "column", gap: "20px", direction: "rtl", padding: "100px 60px" }}>
       
       {/* القسم العلوي مع العنوان وصندوق البحث */}
-      <h1>فرص التدريب المتاحة</h1>
+      <h1 className="x">فرص التدريب المتاحة</h1>
       <p>اكتشف أفضل فرص التدريب في غزة وابدأ رحلتك المهنية</p>
        
 
