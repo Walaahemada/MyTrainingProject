@@ -96,3 +96,9 @@
 
   
 }
+@media (max-width: 900px) {
+  .opp-grid {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
+}
