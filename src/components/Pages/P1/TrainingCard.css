@@ -82,4 +82,8 @@
   .op-apply-btn:hover {
     background: #147a8f;
   }
-  
+  @media (max-width: 900px) {
+    .opportunity-card {
+      grid-template-columns: 1fr !important;
+      padding: 15px;
+    }}
