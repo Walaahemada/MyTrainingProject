@@ -2940,27 +2940,22 @@ textarea {
 /* Responsive */
 @media (max-width: 900px) {
   .top-section {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .contact-wrapper {
-    padding: 0 !important;
+    grid-template-columns: 1fr !important;
+    padding: 15px;
   }
 
   .contact-form-card,
   .contact-info-card {
+    width: 100% !important;
     padding: 15px !important;
-    width: 100%;
-
   }
 
   .map-section iframe {
-    padding: 0px 15px !important;   /* ↓ بدل 50px */
+    padding: 0px 15px !important;
   }
 
   .faq-section {
-    margin: 0px 15px 30px 15px !important; /* ↓ بدل 50px */
+    margin: 0px 15px 30px 15px !important;
   }
 
   .faq-grid {
