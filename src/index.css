@@ -2940,15 +2940,38 @@ textarea {
 /* Responsive */
 @media (max-width: 900px) {
   .top-section {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    padding: 20px;
   }
-  .form-grid {
-    grid-template-columns: 1fr;
+
+  .contact-wrapper {
+    padding: 0 !important;
   }
+
+  .contact-form-card,
+  .contact-info-card {
+    padding: 15px !important;
+    width: 100%;
+
+  }
+
+  .map-section iframe {
+    padding: 0px 15px !important;   /* ↓ بدل 50px */
+  }
+
+  .faq-section {
+    margin: 0px 15px 30px 15px !important; /* ↓ بدل 50px */
+  }
+
   .faq-grid {
     grid-template-columns: 1fr;
   }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
 }
+
 
 /* ====================================Admin-notifications==================================================================== */
 .notifications-page {

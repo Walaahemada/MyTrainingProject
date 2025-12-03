@@ -95,7 +95,7 @@ export default function ContactPage() {
         </div>
 
        {/* Contact Info */}
-       <div className="contact-info-card">
+       <div style={{}}className="contact-info-card">
           <h3 style={{textAlign:"right"}}>معلومات التواصل</h3>
 
           <div className="info-item">
