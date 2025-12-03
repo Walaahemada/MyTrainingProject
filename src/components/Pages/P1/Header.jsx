@@ -53,11 +53,11 @@ function Header() {
   {/* أزرار الموبايل داخل القائمة الجانبية */}
   {!user && (
     <div className="mobile-auth">
-      <button onClick={() => { navigate("/login"); setShowMenu(false); }}>
+      <button style={{margin:"0 20px"}}onClick={() => { navigate("/login"); setShowMenu(false); }}>
         تسجيل الدخول
       </button>
 
-      <button 
+      <button style={{margin:" 0 20px"}}
         className="register-btn"
         onClick={() => { navigate("/signup"); setShowMenu(false); }}
       >

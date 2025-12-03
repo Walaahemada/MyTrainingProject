@@ -87,7 +87,22 @@ p{
 }
 
 
+.mobile-auth {
+  display: none;
+}
 
+@media (max-width: 800px) {
+  .auth-buttons {
+    display: none;
+  
+  }
+
+  .mobile-auth {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }}
 /* ===== أيقونة المنيو للموبايل ===== */
 .menu-icon {
   display: none;
