@@ -22,14 +22,8 @@
 .App > .content {
   flex: 1; /* يأخذ كل المساحة قبل الفوتر */
 }
-/* -------------------about----------------------------- */
-@media (max-width: 600px) {
-  .contact-form-card {
-    padding: 40px 20px !important;  /* تصغير الحواف */
-  }
 
- 
-}
+
 
 
 
@@ -158,42 +152,6 @@ p{
 .logout i {
   color: red;
 }
-/* ===== أزرار الموبايل ===== */
-.mobile-auth {
-  display: none;
-  flex-direction: column;
-  gap: 12px;
-  padding: 0 25px;
-  margin-top: 20px;
-}
-
-.mobile-auth button {
-  padding: 10px;
-  border: none;
-  background: #1b9bb7;
-  color: white;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.mobile-auth .register-btn {
-  color: #1b9bb7;
-  background: none;
-}
-
-/* عرضها فقط على الشاشات الصغيرة */
-@media (max-width: 850px) {
-  .mobile-auth {
-    display: flex;
-  }
-
-  .auth-buttons {
-    display: none; /* يخفي الأزرار العادية */
-  }
-}
-
-
 
 /* ==================== */
 /* ===== الموبايل ===== */
@@ -431,7 +389,7 @@ p{
   }
 
   .hero {
-    padding: 20px ;
+    padding: 50px ;
    
 
    

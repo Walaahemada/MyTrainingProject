@@ -36,21 +36,21 @@ function Header() {
 
         {/* ===== روابط النافبار ===== */}
         <ul className={`nav-links ${showMenu ? "open" : ""}`}>
-          
-          {/* زر الإغلاق داخل المينيو */}
-          <li className="close-icon">
-            <i 
-              className="ri-close-line"
-              onClick={() => setShowMenu(false)}
-            ></i>
-          </li>
+  
+  <li className="close-icon">
+    <i 
+      className="ri-close-line"
+      onClick={() => setShowMenu(false)}
+    ></i>
+  </li>
 
-          <li><a onClick={() => navigate("/")}>الرئيسية</a></li>
-          <li><a onClick={() => navigate("/OppPage")}>الفرص</a></li>
-          <li><a onClick={() => navigate("/CompanyPage")}>الشركات</a></li>
-          <li><a onClick={() => navigate("/About")}>من نحن</a></li>
-          <li><a onClick={() => navigate("/ContactPage")}>اتصل بنا</a></li>
-        {/* أزرار الموبايل داخل القائمة الجانبية */}
+  <li><a onClick={() => navigate("/")}>الرئيسية</a></li>
+  <li><a onClick={() => navigate("/OppPage")}>الفرص</a></li>
+  <li><a onClick={() => navigate("/CompanyPage")}>الشركات</a></li>
+  <li><a onClick={() => navigate("/About")}>من نحن</a></li>
+  <li><a onClick={() => navigate("/ContactPage")}>اتصل بنا</a></li>
+
+  {/* أزرار الموبايل داخل القائمة الجانبية */}
   {!user && (
     <div className="mobile-auth">
       <button onClick={() => { navigate("/login"); setShowMenu(false); }}>
@@ -66,7 +66,8 @@ function Header() {
     </div>
   )}
 
-        </ul>
+</ul>
+
         
 
         {/* ===== مستخدم غير مسجل ===== */}
