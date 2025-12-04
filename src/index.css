@@ -1102,21 +1102,35 @@ input:focus {
 }
 
 /* 🔹 Responsive */
+/* 🔹 Responsive */
 @media (max-width: 768px) {
   .sidebar {
-    width: 200px;
-  }
-}
+    width: 20% !important;   /* حددي العرض اللي بدك إياه */
 
-@media (max-width: 600px) {
-  .sidebar {
-    position: fixed;
-    right: -260px; /* مخفية */
-    transition: 0.4s ease;
   }
+  .hidden{
+    display: none;
+  }
+  .ava{
+    gap: 0px !important;
+    margin: 0px !important;
+  }
+  .mainC,.topbar{
+    width:  80% !important;
+   
+  }
+
+  
 
   .sidebar.open {
-    right: 0; /* تظهر */
+    transform: translateX(0); /* تظهر */
+  }
+
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 40;
   }
 }
 

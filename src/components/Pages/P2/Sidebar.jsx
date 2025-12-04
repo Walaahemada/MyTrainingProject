@@ -1,18 +1,21 @@
 import React from "react";
 
-const Sidebar = ({ activeSection, onSectionChange, sections ,T="لوحة الادارة",X="ri-shield-user-line"}) => {
-  // إذا ما أرسلتِ sections، نستخدم الافتراضي
+const Sidebar = ({ activeSection, onSectionChange, sections, T = "لوحة الادارة", X = "ri-shield-user-line", menuOpen }) => {
+
   const defaultSections = ["نظرة عامة", "إدارة المستخدمين", "إدارة الفرص", "طلبات الشركات", "الاشعارات","التقارير"];
   const menuSections = sections || defaultSections;
 
   return (
-    <aside className="sidebar">
-      <div style={{ display:"flex", justifyContent:"flex-end", gap:"12px", paddingRight:"0" }}>
+    <aside className={`sidebar ${menuOpen ? "open" : ""}`}>
+      
+      <div style={{ display:"flex", justifyContent:"flex-end", paddingRight:"0" }}>
         <div>
-          <h2 style={{ fontSize:"20px", marginBottom:"1px", marginTop:"5px" }}>{T} </h2>
-          <p style={{ marginTop:"0" }}>تدريبي</p>
+          <h2 className="hidden" style={{ fontSize:"20px", marginBottom:"1px", marginTop:"5px" }}>{T}</h2>
+          <p className="hidden" style={{ marginTop:"0" }}>تدريبي</p>
         </div>
-        <div style={{
+
+        <div className="ava"style={{
+          marginLeft:"10px",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -27,19 +30,24 @@ const Sidebar = ({ activeSection, onSectionChange, sections ,T="لوحة الا�
 
       <hr style={{ marginBottom:"20px", marginTop:"20px", borderTop: ".3px solid #eaeaea" }} />
 
-      <nav className="menu">
-        {menuSections.map((section) => (
-          <a 
-            key={section}
-            className={`menu-item ${activeSection === section ? "active" : ""}`}
-            onClick={() => onSectionChange(section)}
-          >
-            {section}
-          </a>
-        ))}
-      </nav>
+      <nav className="menu flex flex-col">
+  {menuSections.map((section) => (
+    <a
+      key={section}
+      className={`menu-item flex items-center gap-2 ${activeSection === section ? "active" : ""}`}
+      onClick={() => onSectionChange(section)}
+    >
+      {/* النص يختفي في الشاشات الصغيرة */}
+      <span className="hidden">{section}</span>
+      {/* الإيقون يبقى دائماً */}
+      <i className="ri-dashboard-line text-lg"></i>
+    </a>
+  ))}
+</nav>
+
     </aside>
   );
 };
 
 export default Sidebar;
+
