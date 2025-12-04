@@ -5,7 +5,7 @@ const StatusFilter = ({ filters = ["الكل", "في الانتظار", "موا�
  
 
   return (
-    <div style={{background:"white" ,height:"50px",marginBottom:"50pX" }}>
+    <div  className="StatusFilter"style={{background:"white" ,height:"50px",marginBottom:"50pX" }}>
     <div style={{background:"white" ,justifyContent:"start",padding:"20px" }}className="status-filter">
       {filters.map((filter) => (
         <button 

@@ -1244,8 +1244,18 @@ input:focus {
 
 /* 🔹 Responsive */
 @media (max-width: 600px) {
-  .menu-toggle {
-    display: block;
+  .sidebar {
+    width: 15% !important; 
+    padding: 5px;
+
+  }
+  .StatusFilter{
+    margin-bottom: 85px !important;
+  }
+
+  .mainC,.topbar{
+    width:  85% !important;
+   
   }
 }
 
