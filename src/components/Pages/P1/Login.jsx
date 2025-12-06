@@ -8,7 +8,6 @@ function Login() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [accountType, setAccountType] = useState("طالب");
   const [loading, setLoading] = useState(false);
 
   const handleLogin = async (e) => {

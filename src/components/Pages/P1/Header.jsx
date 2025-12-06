@@ -2,22 +2,23 @@ import React, { useContext, useState } from "react";
 import logo from "./logo.png";
 import { useNavigate } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
-import supabase from "../../../supabase";
+
 import NotificationBell from "./NotificationBell";
 import UserContext from "../../../context/UserContext";
-
+import supabase from "../../../supabase";
 function Header() {
+  
   const { userData } = useContext(UserContext);
   const navigate = useNavigate();
-  const { user, role } = useAuth();
+  const { user} = useAuth();
   const [showMenu, setShowMenu] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
-
-  const logout = async () => {
-    await supabase.auth.signOut();
-    navigate("/");
+  const handleLogout = async () => {
+    await supabase.auth.signOut();  // تسجيل خروج من Supabase
+    navigate("/login");             // رجوع لصفحة تسجيل الدخول
   };
 
+ 
   return (
     <div className="Header">
       <nav className="navbar">
@@ -79,7 +80,7 @@ function Header() {
         )}
 
         {/* ===== طالب مسجل دخول ===== */}
-        {user && role === "student" && (
+        {user && (
           <div className="profile-area">
 
             {/* أيقونة الإشعارات */}
@@ -112,7 +113,9 @@ function Header() {
                   <span>الإعدادات</span>
                 </div>
 
-                <div className="drop-item logout" onClick={() => { navigate("/login"); setShowDropdown(false); }}>
+                <div className="drop-item logout" onClick={() => { handleLogout(); setShowDropdown(false);  }}
+>
+
                   <i className="ri-logout-box-r-line"></i>
                   <span>تسجيل الخروج</span>
                 </div>
