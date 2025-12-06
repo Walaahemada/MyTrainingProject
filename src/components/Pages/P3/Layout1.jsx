@@ -20,14 +20,14 @@ function Layout1() {
   // لحماية المودال
   const [showProfileEdit, setShowProfileEdit] = useState(false);
 
-  const mySections = [
-    "الرئيسية",
-    "إدارة الفرص ",
-    "نشر فرصة تدريب جديدة",
-    "طلبات الطلاب",
-    "إعدادات الملف الشخصي"
-  ];
 
+  const  mySections = [
+    { name:  "الرئيسية", icon: "ri-dashboard-line text-lg" },
+    { name: "إدارة الفرص", icon: "ri-briefcase-line text-lg" },
+    { name:"نشر فرصة تدريب جديدة", icon: "ri-add-circle-line text-lg " },
+    { name:  "طلبات الطلاب", icon: "ri-user-line text-lg" },
+    { name: "إعدادات الملف الشخصي", icon: "ri-settings-line text-lg" },
+  ];
   // دالة عند تغيير القسم من السايدبار
   const handleSectionChange = (section) => {
     setActiveSection(section);
@@ -46,6 +46,7 @@ function Layout1() {
         sections={mySections}
         T="لوحة الشركات"
         X="ri-building-line text-white text-lg"
+     
       />
 
       <div className="main-section">
@@ -58,7 +59,7 @@ function Layout1() {
         <main className="mainC">
 
           {activeSection === "الرئيسية" && <Main />}
-          {activeSection === "إدارة الفرص " && <Opport />}
+          {activeSection === "إدارة الفرص" && <Opport />}
           {activeSection === "نشر فرصة تدريب جديدة" && <AddOpportunity />}
           {activeSection === "طلبات الطلاب" && <StudentsR />}
 

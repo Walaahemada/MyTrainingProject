@@ -2,8 +2,16 @@ import React from "react";
 
 const Sidebar = ({ activeSection, onSectionChange, sections, T = "لوحة الادارة", X = "ri-shield-user-line", menuOpen }) => {
 
-  const defaultSections = ["نظرة عامة", "إدارة المستخدمين", "إدارة الفرص", "طلبات الشركات", "الاشعارات","التقارير"];
+ 
   const menuSections = sections || defaultSections;
+  const defaultSections = [
+    { name: "نظرة عامة", icon: "ri-home-3-line" },
+    { name: "إدارة المستخدمين", icon: "ri-briefcase-line" },
+    { name: "إدارة الفرص", icon: "ri-building-4-line" },
+    { name:"طلبات الشركات", icon: "ri-information-line" },
+    { name:"الاشعارات", icon: "ri-information-line" },
+    { name:"التقارير", icon: "ri-information-line" },
+  ];
 
   return (
     <aside className={`sidebar ${menuOpen ? "open" : ""}`}>
@@ -33,14 +41,14 @@ const Sidebar = ({ activeSection, onSectionChange, sections, T = "لوحة ال�
       <nav className="menu flex flex-col">
   {menuSections.map((section) => (
     <a
-      key={section}
-      className={`menu-item flex items-center gap-2 ${activeSection === section ? "active" : ""}`}
-      onClick={() => onSectionChange(section)}
+      key={section.name}
+      className={`menu-item flex items-center gap-2 ${activeSection === section.name ? "active" : ""}`}
+      onClick={() => onSectionChange(section.name)}
     >
       {/* النص يختفي في الشاشات الصغيرة */}
-      <span className="hidden">{section}</span>
+      <span style={{marginRight:"10px"}}className="hidden">{section.name}</span>
       {/* الإيقون يبقى دائماً */}
-      <i className="ri-dashboard-line text-lg"></i>
+      <i className={section.icon}></i>
     </a>
   ))}
 </nav>
