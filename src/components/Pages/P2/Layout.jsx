@@ -13,10 +13,23 @@ function Layout() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const [activeSection, setActiveSection] = useState("نظرة عامة");
-
+  const mySections = [
+    { name: "نظرة عامة", icon: "ri-dashboard-line text-lg" },
+    { name: "إدارة المستخدمين", icon: "ri-user-line text-lg" },
+    { name: "إدارة الفرص", icon: "ri-briefcase-line text-lg" },
+    { name:"طلبات الشركات", icon: "ri-building-4-line" },
+    { name:"الاشعارات", icon: "ri-notification-line text-gray-600" },
+    { name:"التقارير", icon: "ri-file-list-line text-2xl" },
+  ];
   return (
     <div className="page">
-      <Sidebar activeSection={activeSection} onSectionChange={setActiveSection} menuOpen={menuOpen} />
+
+      <Sidebar activeSection={activeSection}
+       onSectionChange={setActiveSection}
+        menuOpen={menuOpen} 
+        sections={mySections}/>
+
+
       <div className="main-section">
         <Topbar title={activeSection} />
         <main className="mainC">
